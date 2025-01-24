@@ -6,7 +6,7 @@
   <link href="https://yanghaoi.github.io/atom.xml" rel="self"/>
   
   <link href="https://yanghaoi.github.io/"/>
-  <updated>2025-01-24T07:50:38.420Z</updated>
+  <updated>2025-01-24T08:07:14.335Z</updated>
   <id>https://yanghaoi.github.io/</id>
   
   <author>
@@ -17,23 +17,27 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>PHP filters和CVE-2024-2961组合:从文件读取到RCE</title>
     <link href="https://yanghaoi.github.io/2024/12/04/phpfilters-he-cve-2024-2961-cong-wen-jian-du-qu-dao-rce/"/>
     <id>https://yanghaoi.github.io/2024/12/04/phpfilters-he-cve-2024-2961-cong-wen-jian-du-qu-dao-rce/</id>
     <published>2024-12-04T06:27:20.270Z</published>
-    <updated>2025-01-24T07:50:38.420Z</updated>
+    <updated>2025-01-24T08:07:14.335Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;PHP-filters和CVE-2024-2961组合-从文件读取到RCE&quot;&gt;&lt;a href=&quot;#PHP-filters和CVE-2024-2961组合-从文件读取到RCE&quot; class=&quot;headerlink&quot; title=&quot;PHP</summary>
+    <summary type="html">&lt;h2 id=&quot;1-简介&quot;&gt;&lt;a href=&quot;#1-简介&quot; class=&quot;headerlink&quot; title=&quot;1. 简介&quot;&gt;&lt;/a&gt;1. 简介&lt;/h2&gt;&lt;p&gt; glibc（GNU C Library）是 GNU 项目的一部分，主要为基于 Unix 的系统（如 Linux）提供</summary>
         
       
     
     
     
+    <category term="漏洞复现" scheme="https://yanghaoi.github.io/categories/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    
+    
+    <category term="CVE-2024-2961" scheme="https://yanghaoi.github.io/tags/CVE-2024-2961/"/>
     
   </entry>
   
@@ -42,7 +46,7 @@
     <link href="https://yanghaoi.github.io/2024/08/18/fastjson-lou-dong-chang-jian-wa-jue-he-li-yong-fang-fa/"/>
     <id>https://yanghaoi.github.io/2024/08/18/fastjson-lou-dong-chang-jian-wa-jue-he-li-yong-fang-fa/</id>
     <published>2024-08-18T14:14:47.337Z</published>
-    <updated>2024-12-10T07:33:52.610Z</updated>
+    <updated>2025-01-24T08:04:58.161Z</updated>
     
     
       

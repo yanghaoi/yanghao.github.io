@@ -441,7 +441,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-08-19
+                    2024-12-10
                 </div>
                 
 
@@ -2424,7 +2424,7 @@ public static byte[] readFileInBytesToString(String filePath) {
     }
 }
 </code></pre>
-<h4 id="-3"><a href="#-3" class="headerlink" title="<= 1.2.80(java.lang.Exception)"></a>&lt;= 1.2.80(java.lang.Exception)</h4><p><code>fastjson1.2.80</code>添加了黑名单对上文的利用方式进行限制，但在默认<code>autoType</code>关闭的情况下依然存在可利用的白名单期望类<code>Throwable</code>(<code>java.lang.Exception</code>继承于<code>Throwable</code>)绕过黑名单限制。可结合其他依赖的默认行为实现远程代码执行、任意文件读写等操作（如）。继承于 java.lang.Exception 的类能够导致的漏洞:Jdbc connection RCE、Groovy RCE、Ognl读写文件、Aspectj读文件等</p>
+<h4 id="-3"><a href="#-3" class="headerlink" title="<= 1.2.80(java.lang.Exception)"></a>&lt;= 1.2.80(java.lang.Exception)</h4><p><code>fastjson1.2.80</code>添加了黑名单对上文的利用方式进行限制，但在默认<code>autoType</code>关闭的情况下依然存在可利用的白名单期望类<code>Throwable</code>(<code>java.lang.Exception</code>继承于<code>Throwable</code>)绕过黑名单限制。可结合其他依赖的默认行为实现远程代码执行、任意文件读写等操作（如继承于<code>java.lang.Exception</code>的类能够导致的漏洞:<code>Jdbc connection RCE</code>、<code>Groovy RCE</code>、<code>Ognl</code>读写文件、<code>Aspectj</code>读文件等）。</p>
 <p><strong>groovy-jar-rce</strong></p>
 <pre><code class="line-numbers language-json">// 1.2.76 &lt;= fastjson &lt; 1.2.83
 
@@ -3782,49 +3782,37 @@ http://x.x.x.x/groovy/grape/GrabAnnotationTransformation2.class
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2024/08/18/fastjson-lou-dong-chang-jian-wa-jue-he-li-yong-fang-fa/">
+                <a href="/2024/12/04/phpfilters-he-cve-2024-2961-cong-wen-jian-du-qu-dao-rce/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/yanghaoi/yanghaoi.github.io/medias/featureimages/11.jpg" class="responsive-img" alt="Fastjson反序列化漏洞复现">
                         
-                        <span class="card-title">Fastjson反序列化漏洞复现</span>
+                        <img src="https://cdn.jsdelivr.net/gh/yanghaoi/yanghaoi.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            本文学习Fastjson反序列化漏洞的基础知识，整理相关Payload并搭建测试环境进行复现。在复现过程中主要侧重于内存马的注入和使用。
+                            PHP filters和CVE-2024-2961组合:从文件读取到RCE1. 简介 glibc（GNU C Library）是 GNU 项目的一部分，主要为基于 Unix 的系统（如 Linux）提供 C 标准库和底层系统调用接口。
+CV
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-08-18
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-12-04
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/" class="post-category">
-                                    漏洞复现
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            YangHao
                             
                         </span>
                     </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Fastjson/">
-                        <span class="chip bg-color">Fastjson</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -4056,7 +4044,7 @@ http://x.x.x.x/groovy/grape/GrabAnnotationTransformation2.class
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">70.9k</span>&nbsp;字
+                class="white-color">73.2k</span>&nbsp;字
             
             
             
